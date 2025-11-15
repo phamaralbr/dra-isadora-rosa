@@ -22,7 +22,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://phamaralbr.github.io/dra-isadora-rosa',
+  // site: 'https://phamaralbr.github.io',
   // base: '/dra-isadora-rosa',
 
   output: 'static',

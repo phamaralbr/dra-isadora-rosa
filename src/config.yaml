@@ -1,7 +1,7 @@
 site:
   name: Dra. Isadora Rosa
-  site: 'https://draisadorarosa.com.br'
-  base: '/'
+  site: 'https://phamaralbr.github.io'
+  base: '/dra-isadora-rosa'
   trailingSlash: false
 
   googleSiteVerificationId: false
