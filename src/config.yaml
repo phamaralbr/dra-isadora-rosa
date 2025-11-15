@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Dra. Isadora Rosa
-    template: '%s — Dra. Isadora Rosa'
+    template: 'Dra. Isadora Rosa'
   description: 'Especialista em ginecologia e reprodução humana. Agende sua consulta.'
   robots:
     index: true
