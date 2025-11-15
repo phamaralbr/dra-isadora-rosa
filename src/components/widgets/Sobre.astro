@@ -1,0 +1,46 @@
+---
+import DoctorPhoto from '../../assets/images/isadora-about.png';
+---
+
+<section id="about" class="w-full py-20 bg-offWhite text-isaGreen">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+    <!-- IMAGE + DECORATIVE CIRCLE -->
+    <div class="relative order-2 md:order-none flex justify-center w-full md:w-auto">
+      <div class="relative">
+        <div
+          class="absolute top-1/2 left-1/2
+            -translate-x-3/4 -translate-y-1/2
+             rounded-full bg-isaPink/80
+             w-[450px] h-[450px] lg:w-[650px] lg:h-[650px] z-0"
+        >
+        </div>
+
+        <img
+          src={DoctorPhoto.src}
+          alt="Foto da Doutora"
+          class="relative z-10 w-[350px] md:w-[400px] lg:w-[500px] block"
+        />
+      </div>
+    </div>
+
+    <!-- TEXT -->
+    <div class="order-1 md:order-none text-isaPink">
+      <h2 class="text-3xl md:text-3xl font-sans font-normal mb-6">Sobre Mim</h2>
+
+      <p class="font-urbanist text-lg leading-relaxed mb-4">
+        Sou a Dra. Isadora Rosa, especialista em saúde feminina e apaixonada por oferecer um cuidado acolhedor, humano e
+        baseado em evidências.
+      </p>
+
+      <p class="font-urbanist text-lg leading-relaxed mb-4">
+        Minha missão é acompanhar cada paciente com respeito, clareza e uma abordagem individualizada, sempre prezando
+        pelo bem estar físico e emocional.
+      </p>
+
+      <p class="font-urbanist text-lg leading-relaxed">
+        Acredito que informação e escuta ativa transformam vidas. Meu trabalho é ajudar você a se sentir segura, cuidada
+        e bem informada em cada etapa.
+      </p>
+    </div>
+  </div>
+</section>

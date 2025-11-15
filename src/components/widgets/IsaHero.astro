@@ -14,8 +14,10 @@ const { id } = Astro.props;
 <section {...id ? { id } : {}} class="relative w-full bg-isaGreen py-16 md:py-24">
   <!-- Decorative Flowers -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <FlowerRight class="absolute -top-5 right-0 w-[clamp(500px,40vw,1000px)]" />
-    <FlowerLeft class="absolute -bottom-32 -left-60 w-[clamp(600px,50vw,1000px)]" />
+    <FlowerRight class="absolute -top-5 -right-36 w-[550px] md:-top-5 md:right-0 md:w-[clamp(500px,40vw,1000px)]" />
+    <FlowerLeft
+      class="absolute -bottom-32 -left-52 w-[650px] md:-bottom-32 md:-left-60 md:w-[clamp(600px,50vw,1000px)]"
+    />
   </div>
 
   <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-around gap-10 md:gap-20">
@@ -39,7 +41,7 @@ const { id } = Astro.props;
       <!-- Button -->
       <a
         href="#"
-        class="btn-secondary py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto bg-offWhite text-isaGreen hover:bg-offWhite/80"
+        class="btn-primary py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto bg-offWhite text-isaGreen hover:bg-offWhite/80"
       >
         Agende sua consulta
       </a>

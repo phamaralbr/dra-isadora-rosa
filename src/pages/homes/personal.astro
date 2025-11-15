@@ -11,6 +11,7 @@ import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 import IsaHero from '~/components/widgets/IsaHero.astro';
+import Sobre from '~/components/widgets/Sobre.astro';
 
 const metadata = {
   title: 'Personal Homepage Demo',
@@ -43,19 +44,7 @@ const metadata = {
     <IsaHero />
   </div>
 
-  <!-- Hero2 Widget ******************* -->
-
-  <!-- <Hero
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
-  >
-    <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
-    </Fragment>
-  </Hero> -->
+  <Sobre />
 
   <!-- Content Widget **************** -->
 
@@ -95,23 +84,23 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
-      <p>
+      <h2 class="text-2xl font-regular tracking-tight text-isaPink sm:text-3xl mb-10">Sobre Mim</h2>
+      <p class="text-isaPink font-marcellus">
         Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
         pixel becomes a brushstroke in the canvas of imagination.
       </p>
       <br />
-      <p>
+      <p class="text-isaPink font-marcellus">
         I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
         details of typography, or the vibrant hues of nature during my outdoor escapades.
       </p>
       <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+      <p class="text-isaPink font-marcellus">If you're curious to dive deeper into my work, you can follow me:</p>
     </Fragment>
 
-    <Fragment slot="bg">
+    <!-- <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+    </Fragment> -->
   </Content>
 
   <!-- Steps Widget ****************** -->
