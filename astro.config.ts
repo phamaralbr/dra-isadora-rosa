@@ -23,7 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   site: 'https://phamaralbr.github.io/dra-isadora-rosa',
-  base: '/dra-isadora-rosa',
+  // base: '/dra-isadora-rosa',
 
   output: 'static',
 
