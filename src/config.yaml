@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Dra. Isadora Rosa
-    template: 'Dra. Isadora Rosa'
-  description: 'Especialista em ginecologia e reprodução humana. Agende sua consulta.'
+    default: Dra. Isadora Rosa | Ginecologia e Reprodução Humana em Brasília DF
+    template: 'Dra. Isadora Rosa | Ginecologia e Reprodução Humana em Brasília DF'
+  description: 'Especialista em Ginecologia e Reprodução Humana em Brasília DF. Atendimento humanizado, exames, tratamentos e acompanhamento completo. Agende sua consulta.'
   robots:
     index: true
     follow: true
@@ -30,38 +30,6 @@ metadata:
 i18n:
   language: pt-BR
   textDirection: ltr
-
-apps:
-  blog:
-    isEnabled: false
-    postsPerPage: 6
-
-    post:
-      isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true
-    relatedPostsCount: 4
 
 analytics:
   vendors:
