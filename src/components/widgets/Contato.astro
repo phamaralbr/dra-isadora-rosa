@@ -1,0 +1,79 @@
+---
+import { MapPin, Instagram } from 'lucide-astro';
+import WhatsIcon from '../../assets/vectors/whatsapp.svg';
+const { id } = Astro.props;
+const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+const place = 'Genesis+Centro+de+Assistencia+em+Reproducao+Humana+Brasilia+DF';
+---
+
+<section {...id ? { id } : {}} class="scroll-mt-16 w-full py-20 bg-isaGreen text-offWhite">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <!-- LEFT: CONTACT INFO -->
+    <div>
+      <h2 class="text-3xl font-sans mb-6">Contato e Localização</h2>
+
+      <p class="font-urbanist text-lg leading-relaxed mb-10 opacity-95 max-w-md">
+        Entre em contato ou agende sua consulta. O consultório está localizado em um espaço confortável e acolhedor,
+        pensado especialmente para o cuidado feminino.
+      </p>
+
+      <div class="space-y-6">
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/5562985083888"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-4 text-lg hover:opacity-80 transition"
+        >
+          <div class="p-3 rounded-full bg-offWhite/10">
+            <WhatsIcon class="w-6 h-6" />
+          </div>
+          <span class="font-urbanist">(62) 98508-3888</span>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/isadorarosa/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-4 text-lg hover:opacity-80 transition"
+        >
+          <div class="p-3 rounded-full bg-offWhite/10">
+            <Instagram class="w-6 h-6" />
+          </div>
+          <span class="font-urbanist">@isadorarosa</span>
+        </a>
+
+        <!-- Address -->
+        <div class="flex items-center gap-4 text-lg">
+          <div class="p-3 rounded-full bg-offWhite/10">
+            <MapPin class="w-6 h-6" />
+          </div>
+          <div class="flex flex-col">
+            <span class="font-urbanist"> Clínica Gênesis de Reprodução Humana </span>
+            <span class="font-urbanist"> SHLS 716 - Centro Clinico Sul, Asa Sul, Brasília - DF </span>
+          </div>
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/5562985083888"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block mt-10 btn py-3 px-6 font-semibold shadow-none text-base w-auto bg-offWhite text-isaGreen hover:bg-offWhite/80"
+      >
+        Agendar consulta
+      </a>
+    </div>
+
+    <!-- RIGHT: MAP -->
+    <div class="w-full h-[350px] md:h-[450px] rounded-xl overflow-hidden shadow-lg">
+      <iframe
+        src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${place}`}
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full h-full border-0"></iframe>
+    </div>
+  </div>
+</section>

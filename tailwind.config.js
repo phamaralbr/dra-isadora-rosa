@@ -19,6 +19,7 @@ export default {
         },
         isaPink: {
           DEFAULT: '#8E6161',
+          faded: '#a5807d',
           light: '#b38c8c',
           dark: '#664b4b',
         },
