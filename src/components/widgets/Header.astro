@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import IsadoraLogo from '../../assets/vectors/isadora-logo.svg';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
-import { trimSlash, getAsset } from '~/utils/permalinks';
+import { trimSlash } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
 
 interface Link {
@@ -36,7 +36,7 @@ const {
   isDark = false,
   isFullWidth = false,
   // showToggleTheme = false,
-  showRssFeed = false,
+  // showRssFeed = false,
   position = 'center',
 } = Astro.props;
 
