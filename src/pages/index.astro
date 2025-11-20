@@ -8,6 +8,7 @@ import PorQueMeEscolher from '~/components/widgets/PorQueMeEscolher.astro';
 import Formacao from '~/components/widgets/Formacao.astro';
 import Contato from '~/components/widgets/Contato.astro';
 import CTA from '~/components/widgets/CTA.astro';
+import { WHATSAPP_LINK } from '../content/constants/links';
 
 const metadata = {
   title: 'Dra. Isadora Rosa',
@@ -27,7 +28,7 @@ const metadata = {
       actions={[
         {
           text: 'Agendar Consulta',
-          href: 'https://wa.me/5562985083888',
+          href: WHATSAPP_LINK,
           target: '_blank',
           rel: 'noopener noreferrer',
         },
@@ -35,6 +36,8 @@ const metadata = {
       isSticky
     />
   </Fragment>
+
+  <!-- <FloatingWhatsapp /> -->
 
   <!-- IsaHero Widget ******************* -->
 

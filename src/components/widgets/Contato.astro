@@ -1,6 +1,7 @@
 ---
-import { MapPin, Instagram } from 'lucide-astro';
+import { MapPin, Instagram, Mail } from 'lucide-astro';
 import WhatsIcon from '../../assets/vectors/whatsapp.svg';
+import { WHATSAPP_LINK, INSTAGRAM_LINK, EMAIL_LINK } from '../../content/constants/links.ts';
 const { id } = Astro.props;
 const apiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
 const place = 'Genesis+Centro+de+Assistencia+em+Reproducao+Humana+Brasilia+DF';
@@ -18,9 +19,16 @@ const place = 'Genesis+Centro+de+Assistencia+em+Reproducao+Humana+Brasilia+DF';
       </p>
 
       <div class="space-y-6">
+        <!-- Email -->
+        <a href={`mailto:${EMAIL_LINK}`} class="flex items-center gap-4 text-lg hover:opacity-80 transition">
+          <div class="p-3 rounded-full bg-offWhite/10">
+            <Mail class="w-6 h-6" />
+          </div>
+          <span class="font-urbanist">{EMAIL_LINK}</span>
+        </a>
         <!-- WhatsApp -->
         <a
-          href="https://wa.me/5562985083888"
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-4 text-lg hover:opacity-80 transition"
@@ -33,7 +41,7 @@ const place = 'Genesis+Centro+de+Assistencia+em+Reproducao+Humana+Brasilia+DF';
 
         <!-- Instagram -->
         <a
-          href="https://www.instagram.com/isadorarosa/"
+          href={INSTAGRAM_LINK}
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-4 text-lg hover:opacity-80 transition"
@@ -57,7 +65,7 @@ const place = 'Genesis+Centro+de+Assistencia+em+Reproducao+Humana+Brasilia+DF';
       </div>
 
       <a
-        href="https://wa.me/5562985083888"
+        href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block mt-10 btn py-3 px-6 font-semibold shadow-none text-base w-auto bg-offWhite text-isaGreen hover:bg-offWhite/80"
