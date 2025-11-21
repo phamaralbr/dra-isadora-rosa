@@ -1,17 +1,29 @@
-# Dra Isadora Rosa - Personal Website
+# Dra Isadora Rosa – Site Pessoal
 
-Personal website for Dra. Isadora Rosa, built with Astro and Tailwind CSS. The site includes sections for the doctor’s profile, services, and contact information with a responsive layout.
+Site pessoal da Dra. Isadora Rosa, desenvolvido com Astro e Tailwind CSS. O site inclui seções sobre o perfil da médica, serviços e informações de contato, tudo com layout responsivo.
 
-## Features
+## Funcionalidades
 
-- Responsive design for desktop, tablet, and mobile.
-- Hero section with decorative SVGs and doctor image.
-- About Me section with photo and text.
-- Social links (Instagram, WhatsApp, Lattes).
-- Smooth scroll navigation and anchor links.
-- Reusable components built with Astro and Tailwind CSS.
+- Design responsivo para desktop, tablet e mobile.
+- Links sociais (Instagram, WhatsApp, Lattes).
+- Navegação com rolagem suave e links âncora.
+- Componentes reutilizáveis criados com Astro e Tailwind CSS.
 
-## Tech Stack
+## Conteúdo da Página
+
+A página é composta por seções organizadas para apresentar a médica, seu trabalho e facilitar o contato com os pacientes.
+
+### O que a página contém
+
+- **Seção inicial** com apresentação da Dra. Isadora e chamada principal.
+- **Sobre a médica**, contando sua história, missão e abordagem humanizada.
+- **Formação acadêmica** e títulos profissionais.
+- **Especialidades** atendidas, explicadas de forma clara.
+- **Motivos para escolher o atendimento**, destacando diferenciais importantes.
+- **Chamada para ação**, incentivando o agendamento da consulta.
+- **Seção de contato**, com informações, links úteis e formas de comunicação.
+
+## Tecnologias
 
 - Astro
 - Tailwind CSS
@@ -19,18 +31,18 @@ Personal website for Dra. Isadora Rosa, built with Astro and Tailwind CSS. The s
 
 <br>
 
-### Commands
+## Comandos
 
-All commands are run from the root of the project, from a terminal:
+Todos os comandos devem ser executados na raiz do projeto, pelo terminal:
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `npm install`       | Installs dependencies                              |
-| `npm run dev`       | Starts local dev server at `localhost:4321`        |
-| `npm run build`     | Build your production site to `./dist/`            |
-| `npm run preview`   | Preview your build locally, before deploying       |
-| `npm run check`     | Check your project for errors                      |
-| `npm run fix`       | Run Eslint and format codes with Prettier          |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro preview` |
+| Comando             | Ação                                                         |
+| ------------------- | ------------------------------------------------------------ |
+| `npm install`       | Instala as dependências                                      |
+| `npm run dev`       | Inicia o servidor de desenvolvimento em `localhost:4321`     |
+| `npm run build`     | Gera a versão de produção do site em `./dist/`               |
+| `npm run preview`   | Faz um preview local da versão de produção                   |
+| `npm run check`     | Verifica o projeto em busca de erros                         |
+| `npm run fix`       | Executa o ESLint e formata o código com o Prettier           |
+| `npm run astro ...` | Executa comandos da CLI, como `astro add` ou `astro preview` |
 
 <br>
