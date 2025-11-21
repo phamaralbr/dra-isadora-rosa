@@ -1,16 +1,16 @@
 ---
-import { Heart, HandHeart, Stethoscope, Sparkles } from 'lucide-astro';
+import { Heart, Clock, BookText, Sparkles } from 'lucide-astro';
 const { id } = Astro.props;
 ---
 
 <section {...id ? { id } : {}} class="w-full py-20 bg-offWhite text-isaPink">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-sans mb-12">Por que me escolher</h2>
+    <h2 class="text-3xl font-sans mb-12">Porque me escolher</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
       <!-- ITEM -->
       <div class="flex flex-col items-center px-4">
-        <Stethoscope class="w-10 h-10 mb-4 text-isaPink" />
+        <BookText class="w-10 h-10 mb-4 text-isaPink" />
         <h3 class="text-xl font-semibold mb-2">Atendimento Especializado</h3>
         <p class="font-medium text-base leading-relaxed opacity-90">
           Cuidado dedicado com foco em ginecologia, saúde feminina e bem estar.
@@ -37,10 +37,10 @@ const { id } = Astro.props;
 
       <!-- ITEM -->
       <div class="flex flex-col items-center px-4">
-        <HandHeart class="w-10 h-10 mb-4 text-isaPink" />
-        <h3 class="text-xl font-semibold mb-2">Acompanhamento Individualizado</h3>
+        <Clock class="w-10 h-10 mb-4 text-isaPink" />
+        <h3 class="text-xl font-semibold mb-2">Pontualidade</h3>
         <p class="font-medium text-base leading-relaxed opacity-90">
-          Cada paciente recebe atenção única e orientação personalizada.
+          Respeito ao seu tempo, com consultas organizadas e atendimento no horário combinado.
         </p>
       </div>
     </div>

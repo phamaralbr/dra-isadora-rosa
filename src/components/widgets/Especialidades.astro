@@ -1,5 +1,5 @@
 ---
-import { Stethoscope, Heart, Baby, Atom, Pill, Dna } from 'lucide-astro';
+import { Dna, Snowflake, TestTubeDiagonal, Stethoscope, Pill, HeartPulse } from 'lucide-astro';
 const { id } = Astro.props;
 ---
 
@@ -8,16 +8,34 @@ const { id } = Astro.props;
     <h2 class="text-3xl font-sans font-normal mb-12 text-center">Especialidades</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- Item -->
+      <!-- Reprodução Humana -->
       <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
-        <Heart class="w-10 h-10 mb-4 text-offWhite" />
-        <h3 class="text-xl font-semibold mb-3">Saúde da Mulher</h3>
+        <Dna class="w-10 h-10 mb-4 text-offWhite" />
+        <h3 class="text-xl font-semibold mb-3">Reprodução Humana</h3>
         <p class="font-medium text-offWhite/90 leading-relaxed">
-          Acompanhamento completo com foco no bem-estar físico, emocional e hormonal da mulher.
+          Acompanhamento individualizado para transformar o sonho da maternidade em um caminho possível e seguro.
         </p>
       </div>
 
-      <!-- Item -->
+      <!-- Congelamento de Óvulos -->
+      <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
+        <Snowflake class="w-10 h-10 mb-4 text-offWhite" />
+        <h3 class="text-xl font-semibold mb-3">Congelamento de Óvulos</h3>
+        <p class="font-medium text-offWhite/90 leading-relaxed">
+          Preservação da fertilidade com planejamento, autonomia e o que há de mais atual na ciência.
+        </p>
+      </div>
+
+      <!-- FIV -->
+      <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
+        <TestTubeDiagonal class="w-10 h-10 mb-4 text-offWhite" />
+        <h3 class="text-xl font-semibold mb-3">Fertilização in Vitro (FIV)</h3>
+        <p class="font-medium text-offWhite/90 leading-relaxed">
+          Tratamentos personalizados com tecnologia avançada para otimizar as chances de gestação.
+        </p>
+      </div>
+
+      <!-- Consulta Ginecológica -->
       <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
         <Stethoscope class="w-10 h-10 mb-4 text-offWhite" />
         <h3 class="text-xl font-semibold mb-3">Consulta Ginecológica</h3>
@@ -26,39 +44,22 @@ const { id } = Astro.props;
         </p>
       </div>
 
-      <!-- Item -->
-      <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
-        <Baby class="w-10 h-10 mb-4 text-offWhite" />
-        <h3 class="text-xl font-semibold mb-3">Pré-natal</h3>
-        <p class="font-medium text-offWhite/90 leading-relaxed">
-          Acompanhamento cuidadoso e humanizado para garantir segurança e tranquilidade durante a gestação.
-        </p>
-      </div>
-
-      <!-- Item -->
+      <!-- Contracepção -->
       <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
         <Pill class="w-10 h-10 mb-4 text-offWhite" />
         <h3 class="text-xl font-semibold mb-3">Contracepção</h3>
         <p class="font-medium text-offWhite/90 leading-relaxed">
-          Orientação individualizada sobre métodos contraceptivos e planejamento familiar.
+          Orientação personalizada para escolhas anticoncepcionais seguras, confortáveis e adequadas ao seu momento de
+          vida.
         </p>
       </div>
 
-      <!-- Item -->
+      <!-- Climatério e Menopausa -->
       <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
-        <Atom class="w-10 h-10 mb-4 text-offWhite" />
+        <HeartPulse class="w-10 h-10 mb-4 text-offWhite" />
         <h3 class="text-xl font-semibold mb-3">Climatério e Menopausa</h3>
         <p class="font-medium text-offWhite/90 leading-relaxed">
-          Avaliação e tratamento completo para equilíbrio hormonal e qualidade de vida.
-        </p>
-      </div>
-
-      <!-- Item -->
-      <div class="bg-offWhite/10 p-8 rounded-2xl backdrop-blur-sm border border-offWhite/20">
-        <Dna class="w-10 h-10 mb-4 text-offWhite" />
-        <h3 class="text-xl font-semibold mb-3">Reprodução Humana</h3>
-        <p class="font-medium text-offWhite/90 leading-relaxed">
-          Avaliação completa da fertilidade, acompanhamento especializado e cuidados voltados ao sonho de engravidar.
+          Acompanhamento atento para atravessar essa fase com equilíbrio, qualidade de vida e bem-estar.
         </p>
       </div>
     </div>
