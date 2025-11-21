@@ -10,7 +10,7 @@ https://draisadorarosa.com.br
 
 ## Preview do Projeto
 
-_(Adicione aqui uma screenshot depois, como `./.github/preview-screenshot.png`)_
+![Preview](./.github/preview-screenshot.png)
 
 ## Tecnologias Utilizadas
 
