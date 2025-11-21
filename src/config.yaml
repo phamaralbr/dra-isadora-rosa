@@ -1,7 +1,7 @@
 site:
   name: Dra. Isadora Rosa
-  site: 'https://phamaralbr.github.io'
-  base: '/dra-isadora-rosa'
+  site: 'https://draisadorarosa.com.br'
+  base: '/'
   trailingSlash: false
 
   googleSiteVerificationId: false
@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Dra. Isadora Rosa | Ginecologia e Reprodução Humana em Brasília DF
-    template: 'Dra. Isadora Rosa | Ginecologia e Reprodução Humana em Brasília DF'
+    default: Dra. Isadora Rosa • Ginecologia e Reprodução Humana em Brasília DF
+    template: 'Dra. Isadora Rosa • Ginecologia e Reprodução Humana em Brasília DF'
   description: 'Especialista em Ginecologia e Reprodução Humana em Brasília DF. Atendimento humanizado, exames, tratamentos e acompanhamento completo. Agende sua consulta.'
   robots:
     index: true
