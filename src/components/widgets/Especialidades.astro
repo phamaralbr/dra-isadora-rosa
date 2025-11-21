@@ -7,7 +7,9 @@ const { id } = Astro.props;
   <div class="container mx-auto px-6">
     <h2 class="text-3xl font-sans font-normal mb-12 text-center">Especialidades</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+    >
       <!-- Reprodução Humana -->
       <div class="bg-isaGreen/10 p-8 rounded-2xl backdrop-blur-sm border border-isaGreen/20">
         <Dna class="w-10 h-10 mb-4 text-isaGreen" />
