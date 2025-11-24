@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Dra. Isadora Rosa • Ginecologia e Reprodução Humana
-    template: 'Dra. Isadora Rosa • Ginecologia e Reprodução Humana'
+    default: Dra. Isadora Rosa • Ginecologia e Reprodução Humana em Brasília DF
+    template: 'Dra. Isadora Rosa • Ginecologia e Reprodução Humana em Brasília DF'
   description: 'Especialista em Ginecologia e Reprodução Humana em Brasília DF. Atendimento humanizado, exames, tratamentos e acompanhamento completo. Agende sua consulta!'
   robots:
     index: true
