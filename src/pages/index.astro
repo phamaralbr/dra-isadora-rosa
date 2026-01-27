@@ -10,18 +10,20 @@ import Contato from '~/components/widgets/Contato.astro';
 import CTA from '~/components/widgets/CTA.astro';
 import { WHATSAPP_LINK } from '../content/constants/links';
 
-const metadata = {
+import ogImage from '../assets/images/default.png';
+
+export const metadata = {
   title: 'Dra. Isadora Rosa',
-  // openGraph: {
-  //   images: [
-  //     {
-  //       url: 'https://draisadorarosa.com.br/default.png',
-  //       width: 1200,
-  //       height: 628,
-  //       alt: 'Dra. Isadora Rosa',
-  //     },
-  //   ],
-  // },
+  openGraph: {
+    images: [
+      {
+        url: ogImage,
+        width: ogImage.width,
+        height: ogImage.height,
+        alt: 'Dra. Isadora Rosa',
+      },
+    ],
+  },
 };
 ---
 
