@@ -63,12 +63,12 @@ export const adaptOpenGraphImages = async (
 
       let optimized: { src: string; width?: number; height?: number } | undefined;
 
-      // ✅ Remote URL + Unpic
+      // Remote URL + Unpic
       if (typeof resolvedImage === 'string' && isUnpicCompatible(resolvedImage)) {
         optimized = (await unpicOptimizer(resolvedImage, [defaultWidth], defaultWidth, defaultHeight, 'jpg'))[0];
       }
 
-      // ✅ Imported local image
+      // Imported local image
       else if (typeof resolvedImage !== 'string') {
         const width = resolvedImage.width <= defaultWidth ? resolvedImage.width : defaultWidth;
         const height = resolvedImage.width <= defaultWidth ? resolvedImage.height : defaultHeight;
@@ -76,7 +76,7 @@ export const adaptOpenGraphImages = async (
         optimized = (await astroAssetsOptimizer(resolvedImage, [width], width, height, 'jpg'))[0];
       }
 
-      // ✅ Fallback for string URLs (public paths etc)
+      // Fallback for string URLs (public paths etc)
       else {
         return {
           url: resolvedImage.startsWith('http') ? resolvedImage : String(new URL(resolvedImage, astroSite)),
